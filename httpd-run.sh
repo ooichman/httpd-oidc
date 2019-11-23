@@ -27,7 +27,7 @@ cat > /home/apache/oidc-main.conf << EOF
     # OIDCProviderTokenEndpointAuth client_secret_post
 
     # Needs to match exactly redirect URI registered in dashboard.dataporten.no
-    OIDCRedirectURI ${PUBLICROUTE}/redirect_uri
+    OIDCRedirectURI ${PUBLICROUTE}redirect_uri
     <Location "/">
         AuthType openid-connect
         Require valid-user
